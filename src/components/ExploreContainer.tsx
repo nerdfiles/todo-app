@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
-import { IonList, IonItem, IonButtons, IonButton } from '@ionic/react';
+import { 
+  IonList, 
+  IonItem, 
+  //IonButtons, 
+  IonButton } from '@ionic/react';
 import './ExploreContainer.css';
 
 const sleep = (ms: number) => new Promise(res => setTimeout(res, ms))
@@ -16,9 +20,37 @@ const InitialState:IDefaultState = {
 
 type State = typeof InitialState;
 
+class Cab {
+
+  async commandAdd(e: any) {
+
+    await sleep(1000);
+
+    console.log(e);
+  }
+
+}
+
 class ExploreContainer extends Component<Props, State> {
 
   public readonly state = InitialState;
+
+  commandAdd(e: any) {
+    const cab = new Cab();
+    return cab.commandAdd(e);
+  }
+
+  commandUpdate(e: any) {
+    console.log(e);
+  }
+
+  commandDelete(e: any) {
+    console.log(e);
+  }
+
+  componentDidMount() {
+    this.queryReadListView()
+  }
 
   queryReadListView() {
 
@@ -46,25 +78,6 @@ class ExploreContainer extends Component<Props, State> {
     this.setState({ 
       items: newItemsList 
     });
-  }
-
-  async commandAdd(e: any) {
-
-    await sleep(1000)
-
-    console.log(e);
-  }
-
-  commandUpdate(e: any) {
-    console.log(e);
-  }
-
-  commandDelete(e: any) {
-    console.log(e);
-  }
-
-  componentDidMount() {
-    this.queryReadListView()
   }
 
   render() {
