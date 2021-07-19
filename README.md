@@ -1,7 +1,7 @@
 # API Surface
 
 | Name | Route | Method | Description | Intent | Defaults
-|------|-------|--------|-------------|
+|:------|:-------:|:--------:|-------------:|
 | Forgot password | /forgot | POST | ... | ...
 | Auth token | /token | | POST | ... | ...
 | Refresh | /refresh | POST | Refresh token | ... | 1hr
@@ -35,7 +35,7 @@ through secured hypermediated modular components. Hypermedia-orientation
 involves the measure and use of Context Change Potential over contextual 
 domains: Teleological, Structural, Phenomenological, Ontological, Patalogical.
 
-A map:
+A mental models of identity map<sup>[mmi]</sup>:
 
 - Spacetime (Structural; Distribution)
 - Attribute (Ontological; Aisthetic; Discussion)
@@ -197,3 +197,4 @@ const Capabilities = () => {
 ```
 
 [scale]: https://microservices.io/articles/scalecube.html
+[mmi]: https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/mental-models.md
