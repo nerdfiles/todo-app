@@ -1,30 +1,30 @@
 # API Surface
 
-| Name | Route | Method | Description | Intent | Defaults |
-|------:|-------:|--------:|-------------:|-------------:|-------------:|
-| Forgot password | /forgot | POST | ... | ... | 
-| Auth token | /token | | POST | ... | ... | 
-| Refresh | /refresh | POST | Refresh token | ... | 1hr | 
-| User | /users | GET | Users entrypoint | 
-| User | /users/{id} | GET | Users detail view | 
-| User | /users/{hash\_id}:create | GET | Users detail view | 
-| User | /users:create | POST | Users create action | Link relation alias | 
-| User | /users:delete | DELETE | Users list meta-delete action alias | 
-| User | /users:read | GET | Users list read action alias | 
-| User | /users:update | PUT | Users update action alias | 
-| User Profile | /users/{id}/profile | ... | ... | ... | 
-| Todo Entrypoint | /todos | GET | Todos entrypoint | ... | ... | ... | 
-| Todo Get List Next Action | /todos:\_\_next\_\_ | GET | Todo some view | ... | ... | ... | 
-| Todo Elaborate Get List Action | /todos:ElaborateAction | GET | Todo detail view | ... | ... | ... | 
-| Todo Detail view| /todos/{id} | GET | Todo detail view | ... | ... | ... | 
-| Todo Rights Action | /todos:{id} | POST | Todo rights action | ... | ... | ... | 
-| Todo Default Action | /todos/{id}:DefaultAction | POST | Todo detail view | ... | ... | ... | 
-| Todo Elaborate Action | /todos/{id}:ElaborateAction | GET | Todo detail view | ... | ... | ... | 
-| Todo Get Some Action | /todos/{id}:SomeAction | GET | Todo some view | ... | ... | ... | 
-| Todo Get All Action | /todos/{id}:\_\_all\_\_ | GET | Todo some view | ... | ... | ... | 
-| Todo Get Detail Next Action | /todos/{id}:\_\_next\_\_ | GET | Todo some view | ... | ... | ... | 
-| Todo Get Self Action alias | /todos/{id}:\_\_self\_\_ | GET | Todo some view | ... | ... | ... | 
-| Todo Docs Action | /todos/{id}:\_\_doc\_\_ | OPTIONS | Todo some view | ... | ... | ... | 
+| Name | Route | Method | Description | Intent | Defaults | Status Codes | Affordances
+|------:|-------:|--------:|-------------:|-------------:|-------------:| --------------:|
+| Forgot password | /forgot | POST | ... | ... | ... | 201 | U,I,M,N |
+| Auth token | /token | | POST | ... | ... | ... | ... | U,I,M,N |
+| Refresh | /refresh | POST | Refresh token | ... | 1hr |  ... | U,I,M,N |
+| User | /users | GET | Users entrypoint |  ... | ... | ... | S,N,I,N |
+| User | /users/{id} | GET | Users detail view |  ... | ... | ... | ... |
+| User | /users/{hash\_id}:create | GET | Users detail view |  ... | ... | ... | ... |
+| User | /users:create | POST | Users create action | Link relation alias |  ... | ... | ... | ... |
+| User | /users:delete | DELETE | Users list meta-delete action alias |  ... | ... | ... | ... |
+| User | /users:read | GET | Users list read action alias |  ... | ... | ... | ... |
+| User | /users:update | PUT | Users update action alias |  ... | ... | ... | ... |
+| User Profile | /users/{id}/profile | ... | ... | ... |  ... | ... |
+| Todo Entrypoint | /todos | GET | Todos entrypoint | ... | ... | ... |  ... | ... |
+| Todo Get List Next Action | /todos:\_\_next\_\_ | GET | Todo some view | ... | ... | ... |  ... | ... |
+| Todo Elaborate Get List Action | /todos:ElaborateAction | GET | Todo detail view | ... | ... | ... |  ... | ... |
+| Todo Detail view| /todos/{id} | GET | Todo detail view | ... | ... | ... |  ... | ... |
+| Todo Rights Action | /todos:{id} | POST | Todo rights action | ... | ... | ... |  ... | ... |
+| Todo Default Action | /todos/{id}:DefaultAction | POST | Todo detail view | ... | ... | ... |  ... | ... |
+| Todo Elaborate Action | /todos/{id}:ElaborateAction | GET | Todo detail view | ... | ... | ... |  ... | ... |
+| Todo Get Some Action | /todos/{id}:SomeAction | GET | Todo some view | ... | ... | ... |  ... | ... |
+| Todo Get All Action | /todos/{id}:\_\_all\_\_ | GET | Todo some view | ... | ... | ... |  ... | ... |
+| Todo Get Detail Next Action | /todos/{id}:\_\_next\_\_ | GET | Todo some view | ... | ... | ... |  ... | ... |
+| Todo Get Self Action alias | /todos/{id}:\_\_self\_\_ | GET | Todo some view | ... | ... | ... |  ... | ... |
+| Todo Docs Action | /todos/{id}:\_\_doc\_\_ | OPTIONS | Todo some view | ... | ... | ... |  ... | ... |
 
 ## Application
 
